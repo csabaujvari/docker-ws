@@ -16,3 +16,4 @@
 
 * DEFAULT_USER - default user: 'pgadmin4@pgadmin.org'
 * DEFAULT_PASSWORD - default password: 'admin'
+* 

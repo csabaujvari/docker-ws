@@ -1,0 +1,5 @@
+pgdata/*
+spring-application/build
+spring-application/.idea
+spring-application/.gradle
+spring-application/*.iml
