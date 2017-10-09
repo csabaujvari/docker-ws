@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/sc-spring
+    url: jdbc:postgresql://postgresql:5432/sc-spring
     username: sc-spring
     password: sc-spring
   jpa:
