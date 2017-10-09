@@ -1,0 +1,20 @@
+version: '3'
+services: 
+  postgresql:
+    image: postgres:9.5.4
+    container_name: postgresql-dockerws-1
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_DB=sc-spring
+      - POSTGRES_USER=sc-spring
+      - POSTGRES_PASSWORD=sc-spring
+  pgadmin4:
+    image: fenglc/pgadmin4
+    container_name: pgadmin4-dockerws-1
+    ports:
+      - 5050:5050
+    links:
+      - postgresql:postgresql
